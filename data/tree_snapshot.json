@@ -1,0 +1,483 @@
+{
+  "node_id": "root",
+  "name": "root",
+  "stage": "root",
+  "feature": null,
+  "delta_curve": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "band_indices": [],
+  "candidate_presets": [
+    "HF_enhance",
+    "HLF_cut",
+    "LF_enhance",
+    "bright_monitor",
+    "harman",
+    "lo-fi",
+    "mid_cut",
+    "mid_focus",
+    "mid_presence",
+    "mid_warm",
+    "v_shape",
+    "vocal_enhance"
+  ],
+  "parent_id": null,
+  "children": [
+    {
+      "node_id": "coarse_0001",
+      "name": "high:boost",
+      "stage": "coarse",
+      "feature": "high",
+      "delta_curve": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        4.7,
+        4.7,
+        4.7
+      ],
+      "band_indices": [
+        7,
+        8,
+        9
+      ],
+      "candidate_presets": [
+        "HF_enhance",
+        "bright_monitor",
+        "mid_cut",
+        "v_shape"
+      ],
+      "parent_id": "root",
+      "children": [
+        {
+          "node_id": "medium_0002",
+          "name": "b3_4:+2.0",
+          "stage": "medium",
+          "feature": "b3_4",
+          "delta_curve": [
+            0.0,
+            0.0,
+            1.5,
+            1.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            2,
+            3
+          ],
+          "candidate_presets": [
+            "v_shape"
+          ],
+          "parent_id": "coarse_0001",
+          "children": []
+        },
+        {
+          "node_id": "medium_0003",
+          "name": "b3_4:+0.0",
+          "stage": "medium",
+          "feature": "b3_4",
+          "delta_curve": [
+            0.0,
+            0.0,
+            0.2,
+            0.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            2,
+            3
+          ],
+          "candidate_presets": [
+            "mid_cut"
+          ],
+          "parent_id": "coarse_0001",
+          "children": []
+        },
+        {
+          "node_id": "medium_0004",
+          "name": "b3_4:-2.0",
+          "stage": "medium",
+          "feature": "b3_4",
+          "delta_curve": [
+            0.0,
+            0.0,
+            -1.4,
+            -1.4,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            2,
+            3
+          ],
+          "candidate_presets": [
+            "HF_enhance",
+            "bright_monitor"
+          ],
+          "parent_id": "coarse_0001",
+          "children": [
+            {
+              "node_id": "fine_0005",
+              "name": "b1:-2.0",
+              "stage": "fine",
+              "feature": "b1",
+              "delta_curve": [
+                -2.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "band_indices": [
+                0
+              ],
+              "candidate_presets": [
+                "HF_enhance"
+              ],
+              "parent_id": "medium_0004",
+              "children": []
+            },
+            {
+              "node_id": "fine_0006",
+              "name": "b1:-3.0",
+              "stage": "fine",
+              "feature": "b1",
+              "delta_curve": [
+                -3.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "band_indices": [
+                0
+              ],
+              "candidate_presets": [
+                "bright_monitor"
+              ],
+              "parent_id": "medium_0004",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "node_id": "coarse_0007",
+      "name": "high:neutral",
+      "stage": "coarse",
+      "feature": "high",
+      "delta_curve": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "band_indices": [
+        7,
+        8,
+        9
+      ],
+      "candidate_presets": [
+        "HLF_cut",
+        "LF_enhance",
+        "harman",
+        "mid_presence"
+      ],
+      "parent_id": "root",
+      "children": [
+        {
+          "node_id": "medium_0008",
+          "name": "b5_6:+4.0",
+          "stage": "medium",
+          "feature": "b5_6",
+          "delta_curve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            3.8,
+            3.8,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            4,
+            5
+          ],
+          "candidate_presets": [
+            "mid_presence"
+          ],
+          "parent_id": "coarse_0007",
+          "children": []
+        },
+        {
+          "node_id": "medium_0009",
+          "name": "b5_6:+0.0",
+          "stage": "medium",
+          "feature": "b5_6",
+          "delta_curve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.5,
+            0.5,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            4,
+            5
+          ],
+          "candidate_presets": [
+            "LF_enhance"
+          ],
+          "parent_id": "coarse_0007",
+          "children": []
+        },
+        {
+          "node_id": "medium_0010",
+          "name": "b5_6:-4.0",
+          "stage": "medium",
+          "feature": "b5_6",
+          "delta_curve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -5.0,
+            -5.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            4,
+            5
+          ],
+          "candidate_presets": [
+            "HLF_cut"
+          ],
+          "parent_id": "coarse_0007",
+          "children": []
+        },
+        {
+          "node_id": "medium_0011",
+          "name": "b5_6:-6.0",
+          "stage": "medium",
+          "feature": "b5_6",
+          "delta_curve": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            -5.2,
+            -5.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            4,
+            5
+          ],
+          "candidate_presets": [
+            "harman"
+          ],
+          "parent_id": "coarse_0007",
+          "children": []
+        }
+      ]
+    },
+    {
+      "node_id": "coarse_0012",
+      "name": "high:cut",
+      "stage": "coarse",
+      "feature": "high",
+      "delta_curve": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        -1.8,
+        -1.8,
+        -1.8
+      ],
+      "band_indices": [
+        7,
+        8,
+        9
+      ],
+      "candidate_presets": [
+        "lo-fi",
+        "mid_focus",
+        "mid_warm",
+        "vocal_enhance"
+      ],
+      "parent_id": "root",
+      "children": [
+        {
+          "node_id": "medium_0013",
+          "name": "b1_2:+4.0",
+          "stage": "medium",
+          "feature": "b1_2",
+          "delta_curve": [
+            3.2,
+            3.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            0,
+            1
+          ],
+          "candidate_presets": [
+            "lo-fi"
+          ],
+          "parent_id": "coarse_0012",
+          "children": []
+        },
+        {
+          "node_id": "medium_0014",
+          "name": "b1_2:+2.0",
+          "stage": "medium",
+          "feature": "b1_2",
+          "delta_curve": [
+            2.4,
+            2.4,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            0,
+            1
+          ],
+          "candidate_presets": [
+            "mid_warm"
+          ],
+          "parent_id": "coarse_0012",
+          "children": []
+        },
+        {
+          "node_id": "medium_0015",
+          "name": "b1_2:-2.0",
+          "stage": "medium",
+          "feature": "b1_2",
+          "delta_curve": [
+            -1.8,
+            -1.8,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            0,
+            1
+          ],
+          "candidate_presets": [
+            "vocal_enhance"
+          ],
+          "parent_id": "coarse_0012",
+          "children": []
+        },
+        {
+          "node_id": "medium_0016",
+          "name": "b1_2:-4.0",
+          "stage": "medium",
+          "feature": "b1_2",
+          "delta_curve": [
+            -3.2,
+            -3.2,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "band_indices": [
+            0,
+            1
+          ],
+          "candidate_presets": [
+            "mid_focus"
+          ],
+          "parent_id": "coarse_0012",
+          "children": []
+        }
+      ]
+    }
+  ]
+}
