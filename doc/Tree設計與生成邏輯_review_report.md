@@ -2,6 +2,8 @@
 
 Date: 2026-03-05
 
+maximize preset discrimination
+
 ## 1. 目的
 
 本文件說明目前 EQ decision tree 的設計原則、生成流程、執行時如何被使用，以及目前已知限制。
