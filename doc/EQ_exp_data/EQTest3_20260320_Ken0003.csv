@@ -1,0 +1,11 @@
+window_start,window_end,raw_prediction,binary,consensus_result,quadrant_emotion,emotion_score,stress_score,ae_prediction,ae_confidence,fusion_emotion,fusion_confidence,eq,song
+2026-03-20 14:09:46.199,2026-03-20 14:10:00.218,neutral,positive,negative,neutral,44,,,,,,E1,實驗歌曲
+2026-03-20 14:10:02.199,2026-03-20 14:10:15.378,neutral,positive,negative,sad,40,19.78,positive,0.5728,negative,0.4228,E1,實驗歌曲
+2026-03-20 14:10:17.199,2026-03-20 14:10:31.118,positive,positive,negative,sad,58,20.70,positive,0.6735,negative,0.5235,E1,實驗歌曲
+2026-03-20 14:10:33.199,2026-03-20 14:10:46.171,positive,positive,positive,relaxed,71,21.85,positive,0.7049,positive,0.8050,E1,實驗歌曲
+2026-03-20 14:10:48.199,2026-03-20 14:11:01.119,neutral,positive,negative,sad,58,22.07,positive,0.7013,negative,0.5513,E1,實驗歌曲
+2026-03-20 14:11:03.198,2026-03-20 14:11:17.204,positive,positive,positive,relaxed,71,21.46,positive,0.7034,positive,0.8064,E2,實驗歌曲
+2026-03-20 14:11:34.198,2026-03-20 14:11:48.119,positive,positive,positive,relaxed,86,20.29,positive,0.7143,positive,0.9000,E2,實驗歌曲
+2026-03-20 14:11:50.199,2026-03-20 14:12:03.170,positive,positive,positive,relaxed,90,21.16,positive,0.7091,positive,0.9236,E2,實驗歌曲
+2026-03-20 14:12:05.199,2026-03-20 14:12:19.149,positive,positive,positive,relaxed,93,22.26,positive,0.7126,positive,0.9430,E2,實驗歌曲
+2026-03-20 14:12:21.199,2026-03-20 14:12:34.138,neutral,positive,positive,relaxed,74,22.43,positive,0.6957,positive,0.8229,E2,實驗歌曲

@@ -1,5 +1,9 @@
 # Tree 設計與生成邏輯 Review Report
 
+> Note
+> 本文件屬於較早期的 tree 設計討論紀錄，內容仍可作為背景參考。
+> 目前持續維護中的主線規劃文件已移至 `doc/EQ架構/`。
+
 Date: 2026-03-05
 
 maximize preset discrimination
