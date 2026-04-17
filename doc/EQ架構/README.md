@@ -203,6 +203,7 @@ T_coarse > T_medium > T_fine
 
 詳細說明：
 - [驗證與探索實驗規劃.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/驗證與探索實驗規劃.md)
+- [第一階段Pilot Data實驗規劃書.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/第一階段Pilot Data實驗規劃書.md)
 
 ## 8. 驗證實驗規劃
 
@@ -256,6 +257,37 @@ T_coarse > T_medium > T_fine
 詳細說明：
 - [個人化先驗與偏好記憶研究草案.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/個人化先驗與偏好記憶研究草案.md)
 
+## 10. Contextual Bandit 後續方向
+
+我們也已開始討論，若未來要讓系統不只依賴手寫 Search Policy，而是能根據資料逐步學習「下一步最值得測哪個節點」，`Contextual Bandit` 是一個很值得保留的方向。
+
+目前較合理的理解是：
+
+1. tree 仍保留為搜尋空間
+2. bandit 不直接取代 tree，而是在目前可選節點中做 action selection
+3. emotion-based reward 仍是核心回饋訊號
+4. 前一段情緒狀態、使用者偏好記憶、當前 stage 與節點特徵，都可成為 context 的一部分
+
+因此 bandit 更像是：
+
+- tree-based EQ search 的學習化決策層
+
+而不是：
+
+- tree 的替代品
+
+同時，目前也有一個重要結論：
+
+> 不論最後走手寫 policy 調參，還是導入 Contextual Bandit，都需要先有一批小規模資料，作為 global prior 與校準基礎。
+
+因此現階段較合理的順序仍是：
+
+1. 先做資料蒐集與 reward / threshold 校準
+2. 再評估 bandit 應如何接手 child / sibling / fallback 的排序
+
+詳細說明：
+- [Contextual Bandit導入草案.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/Contextual Bandit導入草案.md)
+
 ## 文件索引
 
 目前主要文件如下：
@@ -268,5 +300,9 @@ T_coarse > T_medium > T_fine
    - 參數校準 / 資料蒐集實驗與正式驗證實驗規劃
 4. [個人化先驗與偏好記憶研究草案.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/個人化先驗與偏好記憶研究草案.md)
    - 個人化先驗與使用者偏好記憶的研究方向
-5. [議題整理.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/議題整理.md)
+5. [Contextual Bandit導入草案.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/Contextual Bandit導入草案.md)
+   - Bandit 與現有 tree search 的關係與導入路線
+6. [第一階段Pilot Data實驗規劃書.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/第一階段Pilot Data實驗規劃書.md)
+   - 第一階段資料蒐集 / 校準實驗的完整草案
+7. [議題整理.md](/home/parker6/Documents/project_02_ARMO/emotion_adaptive_eq/doc/EQ架構/議題整理.md)
    - 議題脈絡與待決問題整理
